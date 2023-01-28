@@ -23,18 +23,32 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text('Mobile Dev Assignment'),
+          title: Text('Mobile Dev Assignment'),
+          centerTitle: true,
         ),
-        body: Container(
-          width: 1500,  
-          height: 600.0,  
-          color: Colors.green,  
-          margin: EdgeInsets.all(20),  
-          padding: EdgeInsets.all(25),  
-          alignment: Alignment.center,  
-          // transform: Matrix4.rotationZ(0.1),
-          child: Text('Introduction to Dart programming')
-        )
-        );
+        body: Center(child: ConstrainedBox(
+          constraints: BoxConstraints.expand(height: 550, width: 600),
+          child: Container(
+              color: Colors.grey,
+              alignment: Alignment.center,
+              // transform: Matrix4.rotationZ(0.1),
+              child: Column(
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.all(20)),
+                  Text('THE BEST BACKGROUND EVER',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.red,
+                          fontSize: 35,
+                          decoration: TextDecoration.underline)
+                          ),
+                          SizedBox(height: 50),
+                          Image.asset('asset/image.jpg',
+                          height: 350),
+                ],
+              )
+              ),
+
+        )));
   }
 }
