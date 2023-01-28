@@ -43,8 +43,7 @@ class MyHomePage extends StatelessWidget {
                           decoration: TextDecoration.underline)
                           ),
                           SizedBox(height: 50),
-                          Image.asset('asset/image.jpg',
-                          height: 350),
+                          Image.asset('assets/img.jpg', height: 350),
                 ],
               )
               ),
