@@ -27,6 +27,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  font_awesome_flutter: '>= 4.7.0'
   flutter:
     sdk: flutter
 
@@ -60,11 +61,11 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - assets/img.jpg
-    - assets/comp.jpg
-    - assets/city.jpg
-    - assets/off.jpg
+  # assets:
+  #   - assets/img.jpg
+  #   - assets/comp.jpg
+  #   - assets/city.jpg
+  #   - assets/off.jpg
 
 
 
