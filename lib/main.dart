@@ -26,7 +26,8 @@ class MyHomePage extends StatelessWidget {
           title: Text('Mobile Dev Assignment'),
           centerTitle: true,
         ),
-        body: Center(child: ConstrainedBox(
+        body: Center(
+            child: ConstrainedBox(
           constraints: BoxConstraints.expand(height: 550, width: 600),
           child: Container(
               color: Colors.grey,
@@ -40,14 +41,17 @@ class MyHomePage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Colors.red,
                           fontSize: 35,
-                          decoration: TextDecoration.underline)
-                          ),
-                          SizedBox(height: 50),
-                          Image.asset('assets/img.jpg', height: 350),
+                          decoration: TextDecoration.underline)),
+                  SizedBox(height: 50),
+                  FittedBox(
+                      child: Row(children: <Widget>[
+                    Image.asset('assets/img.jpg', height: 500, width: 500),
+                    Image.asset('assets/img.jpg', height: 500, width: 500),
+                  ])),
+                  FloatingActionButton(onPressed: () {},
+                  child: Text('click')),
                 ],
-              )
-              ),
-
+              )),
         )));
   }
 }
