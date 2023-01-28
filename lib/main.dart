@@ -39,6 +39,7 @@ class MyHomePage extends StatelessWidget {
           // mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ImageBanner("assets/images/image.jpg"),
+    
             SizedBox(
               // Use of sizedbox
               height: 100,
@@ -50,8 +51,11 @@ class MyHomePage extends StatelessWidget {
                 color: Colors.green,
                 padding: EdgeInsets.all(25),
                 alignment: Alignment.center,
-                child: Text('Introduction to Dart programming')),
+                child: Text('INTRODUCTION TO DART PROGRAMMING', style: TextStyle(fontWeight: FontWeight.bold, decoration: TextDecoration.underline),
+                ),
+                ),
           ],
-        ));
+        ),
+        );
   }
 }
